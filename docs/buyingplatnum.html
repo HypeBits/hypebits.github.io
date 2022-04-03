@@ -1,0 +1,33 @@
+<html>
+    <html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>HypeByte | The hypixel bot that makes your life easier.</title>
+<link rel="icon" href="icon.png" type="image/png">
+ 
+</head>
+    <body>
+        <div id="paypal-button-container-P-0PW8564705404984UMJEWZ6Q"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AQVeYYwIMB9eBKbV69lmNSUYd8YmQ4e5bePk8PSCr34BxJXL0eAslmpmqg37GkZ-2jjikGzlqBMiZsI2&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-0PW8564705404984UMJEWZ6Q'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-0PW8564705404984UMJEWZ6Q'); // Renders the PayPal button
+</script>
+    </body>
+</html>
